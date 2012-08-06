@@ -19,6 +19,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- For all browsers -->
+  <%= stylesheet_link_tag "css/reset" %>
+  <%= stylesheet_link_tag "css/style" %>
+  <%= stylesheet_link_tag "css/colors" %>
+  <%= stylesheet_link_tag 'css/print', media: 'print' %>
+  <!-- For progressively larger displays -->
+  <%= stylesheet_link_tag 'css/480', media: 'only all and (min-width: 480px)' %>
+  <%= stylesheet_link_tag 'css/768', media: 'only all and (min-width: 768px)' %>
+  <%= stylesheet_link_tag 'css/992', media: 'only all and (min-width: 992px)' %>
+  <%= stylesheet_link_tag 'css/1200', media: 'only all and (min-width: 1200px)' %>
+  <!-- For Retina displays -->
+  <%= stylesheet_link_tag 'css/2x', media: 'only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)' %>
+
+  <!-- Webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+  <!-- Additional styles -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
   <%= csrf_meta_tags %>
