@@ -37,6 +37,12 @@
   <!-- Additional styles -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
+  <!-- JavaScript at bottom except for Modernizr -->
+  <%= javascript_include_tag 'js/libs/modernizr.custom' %>
+
+  <!-- For Modern Browsers -->
+  <link rel="shortcut icon" href="assets/img/favicons/favicon.png">
+
   <%= csrf_meta_tags %>
 </head>
 <body>
