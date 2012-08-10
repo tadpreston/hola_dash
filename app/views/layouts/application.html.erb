@@ -35,6 +35,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 
   <!-- Additional styles -->
+  <%= yield :additional_styles %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
   <!-- JavaScript at bottom except for Modernizr -->
@@ -174,7 +175,8 @@
       <%= javascript_include_tag 'application' %>
       <%= javascript_include_tag 'js/setup' %>
 
-      <!-- Libs go here -->
+      <!-- Template Functions -->
+      <%= yield :template_functions %>
 
   </body>
 
