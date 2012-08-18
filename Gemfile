@@ -25,9 +25,9 @@ group :test do
   gem 'cucumber-rails', '~> 1.3.0'
   gem 'factory_girl_rails', '~> 4.0.0'
   gem 'webrat', '~> 0.7.3'
+  gem 'database_cleaner', '~> 0.8.0'
 #  gem 'email_spec', '>= 1.2.1'
 #  gem 'capybara', '>= 1.1.2'
-#  gem 'database_cleaner', '>= 0.7.2'
 #  gem 'launchy', '>= 2.1.0'
 end
 
