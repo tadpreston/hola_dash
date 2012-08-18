@@ -6,9 +6,6 @@ gem 'thin', '~> 1.4.1'
 group :development, :test do
   gem 'sqlite3', '~> 1.3.5'
   gem 'rspec-rails', '>= 2.10.1'
-  gem 'cucumber-rails', '~> 1.3.0'
-  gem 'factory_girl_rails', '~> 4.0.0'
-  gem 'webrat', '~> 0.7.3'
 end
 
 gem 'annotate', '~> 2.5.0', group: :development
@@ -25,6 +22,9 @@ end
 gem 'jquery-rails'
 
 group :test do
+  gem 'cucumber-rails', '~> 1.3.0'
+  gem 'factory_girl_rails', '~> 4.0.0'
+  gem 'webrat', '~> 0.7.3'
 #  gem 'email_spec', '>= 1.2.1'
 #  gem 'capybara', '>= 1.1.2'
 #  gem 'database_cleaner', '>= 0.7.2'
