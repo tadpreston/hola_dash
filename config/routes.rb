@@ -1,9 +1,7 @@
 HolaDash::Application.routes.draw do
-  get "sessions/new"
+  match '/sign_in', to: 'sessions#new'
 
-  get "sessions/create"
-
-  root to: 'static_pages#home'
+  root to: 'home#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
